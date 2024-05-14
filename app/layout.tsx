@@ -6,14 +6,14 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Nia's personal website",
+    default: "Boyfriend Birthday",
     template: "%s | chronark.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Happy Birthday website for long distance love",
   openGraph: {
     title: "chronark.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+      "Happy Birthday website for long distance love",
     url: "https://chronark.com",
     siteName: "chronark.com",
     images: [
@@ -37,12 +37,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Chronark",
-    card: "summary_large_image",
-  },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/logo.png",
   },
 };
 const inter = Inter({
@@ -55,6 +51,11 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
+const cormorant = LocalFont({
+  src: "../public/fonts/Cormorant-VariableFont_wght.ttf",
+  variable: "--font-cormorant",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -63,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
+        
         <Analytics />
       </head>
       <body
