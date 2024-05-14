@@ -6,7 +6,7 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Boyfriend Birthday",
+    default: "Boyfriend's Birthday",
     template: "%s | chronark.com",
   },
   description: "Happy Birthday website for long distance love",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    shortcut: "/logo.png",
+    shortcut: "/logo.jpeg",
   },
 };
 const inter = Inter({
@@ -64,7 +64,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
-        
         <Analytics />
       </head>
       <body

@@ -38,9 +38,9 @@ export default function Example() {
     };
 
     return (
-        <div className="bg-soft-orange min-h-screen flex flex-col justify-center items-center relative">
+        <div className="bg-light-orange min-h-screen flex flex-col justify-center items-center relative">
             <Navigation />
-			<Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={290} /> {/* Agregar partículas */}
+			<Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={290} />
 
             <div className="flex flex-col items-center text-center">
 				
@@ -51,13 +51,13 @@ export default function Example() {
 					I want to wish you the happiest birthday, <br />
 					you're my <span className="text-glow-orange">honeypot</span> ant. <br />
 					wish I could be there to <span className="text-glow-orange">celebrate with you</span>, <br />
-                    Instead, I coded this <span className="text-white">clock</span> that counts  <br />
+                    Instead, I coded this <span className="text-white bg-glow-orange">clock</span> that counts  <br />
                     the days, hours, minutes, and seconds  <br />
                     that have passed since the day <br />
                     I saw you for the <span className="text-glow-orange">last</span> time. <br />
-                </h5>
-                <div className="bg-gray-200 p-6 rounded-lg shadow-md inline-block mb-4">
-                    <div className="bg-soft-orange text-white text-3xl font-mono py-2 px-4 rounded-lg flex items-center justify-center space-x-1">
+                </h5>		
+                <div className="bg-white p-3 rounded-lg shadow-md inline-block mb-4">
+                    <div className="bg-glow-orange text-white text-3xl font-mono py-2 px-4 rounded-lg flex items-center justify-center space-x-1">
                         <div className="flex items-baseline space-x-1">
                             <span className="inline-block w-10 text-center">{String(elapsedTime.days).padStart(2, '0')}</span>
                             <span className="text-lg ml-1">d</span>

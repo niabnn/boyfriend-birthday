@@ -14,6 +14,7 @@ module.exports = {
                 'glow-orange': '#EC900A',
                 'soft-orange': '#F5D5A0',
 				'light-orange': '#FFF9E1',
+				
             },
             textColor: {
                 'glow-orange': '#EC900A',
