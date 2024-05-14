@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Navigation } from "../components/nav";
+import Modal from "../components/modal";
 
 export default function Example() {
     const [elapsedTime, setElapsedTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -31,6 +32,10 @@ export default function Example() {
         setShowMessage(true);
     };
 
+    const handleCloseModal = () => {
+        setShowMessage(false);
+    };
+
     return (
         <div className="bg-soft-orange min-h-screen flex flex-col justify-center items-center">
             <Navigation />
@@ -45,7 +50,8 @@ export default function Example() {
                     I saw you for the last time. <br />
                 </h5>
                 <div className="bg-gray-200 p-6 rounded-lg shadow-md inline-block mb-4">
-                    <div className="bg-black text-white text-6xl font-mono py-4 px-8 rounded-lg flex items-center justify-center space-x-2">
+                    <div className="bg-soft-orange text-white text-6xl font-mono py-4 px-8 rounded-lg flex items-center justify-center space-x-2">
+						<div className="flex items-baseline space-x-1">
                         <div className="flex items-baseline space-x-1">
                             <span className="inline-block w-20 text-center">{String(elapsedTime.days).padStart(2, '0')}</span>
                             <span className="text-xl ml-1">d</span>
@@ -65,22 +71,24 @@ export default function Example() {
                             <span className="inline-block w-20 text-center">{String(elapsedTime.seconds).padStart(2, '0')}</span>
                             <span className="text-xl ml-1">s</span>
                         </div>
+						</div>
                     </div>
-                </div>
-                <button
+					<button
                     onClick={handleStopClick}
-                    className="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:bg-red-700"
+                    className="bg-glow-orange text-white px-4 py-2 rounded shadow-md hover:bg-red-700 mt-2	"
                 >
                     Stop
                 </button>
-                {showMessage && (
-                    <div className="mt-4 text-lg text-center">
+				<p className="mt-4 text-lg text-center">
+                    Click the button 'stop' and see what happens 
+                </p>
+                </div>
+
+                <Modal show={showMessage} onClose={handleCloseModal}>
+                    <div className="text-lg text-center">
                         Sorry, mi amor but this clock will only stop, once you kisses me again
                     </div>
-                )}
-                <p className="mt-4 text-lg text-center">
-                    Click the button 'stop' to see what happens
-                </p>
+                </Modal>
             </div>
         </div>
     );
