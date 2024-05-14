@@ -13,7 +13,7 @@ interface ParticlesProps {
 
 export default function Particles({
 	className = "",
-	quantity = 30,
+	quantity = 100,
 	staticity = 50,
 	ease = 50,
 	refresh = false,
@@ -101,8 +101,8 @@ export default function Particles({
 		const size = Math.floor(Math.random() * 2) + 0.1;
 		const alpha = 0;
 		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
-		const dx = (Math.random() - 0.5) * 0.2;
-		const dy = (Math.random() - 0.5) * 0.2;
+		const dx = (Math.random() - 0.10) * 0.5 	;
+		const dy = (Math.random() - 0.10) * 0.5	;
 		const magnetism = 0.1 + Math.random() * 4;
 		return {
 			x,
@@ -120,19 +120,21 @@ export default function Particles({
 
 	const drawCircle = (circle: Circle, update = false) => {
 		if (context.current) {
-			const { x, y, translateX, translateY, size, alpha } = circle;
-			context.current.translate(translateX, translateY);
-			context.current.beginPath();
-			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-			context.current.fill();
-			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-			if (!update) {
-				circles.current.push(circle);
-			}
+		  const { x, y, translateX, translateY, size, alpha } = circle;
+		  context.current.translate(translateX, translateY);
+		  context.current.beginPath();
+		  context.current.arc(x, y, size, 0, 2 * Math.PI);
+	  
+		  context.current.fillStyle = `#EC900A`; 	  // Set particle color to #EC900A
+	  
+		  context.current.fill();
+		  context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
+	  
+		  if (!update) {
+			circles.current.push(circle);
+		  }
 		}
-	};
+	  };
 
 	const clearContext = () => {
 		if (context.current) {

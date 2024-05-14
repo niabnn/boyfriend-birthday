@@ -10,6 +10,12 @@ module.exports = {
 
 	theme: {
 		extend: {
+
+			backgroundColor: {
+				'glow-orange': '#EC900A', // Animation lines color
+				'soft-orange': '#F5D5A0', // Animation lines color
+			  },
+
 			typography: {
 				DEFAULT: {
 					css: {
@@ -22,7 +28,7 @@ module.exports = {
 					},
 				},
 				quoteless: {
-					css: {
+					css: {	
 						"blockquote p:first-of-type::before": { content: "none" },
 						"blockquote p:first-of-type::after": { content: "none" },
 					},
@@ -33,7 +39,7 @@ module.exports = {
 				display: ["var(--font-calsans)"],
 			},
 			backgroundImage: {
-				"gradient-radial":
+				"gradient-radial":	
 					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
 			},
 			animation: {
