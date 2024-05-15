@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   },
   description: "Happy Birthday website for long distance love",
   openGraph: {
-    title: "chronark.com",
+    title: "Happy Birthday Brett!",
     description:
       "Happy Birthday website for long distance love",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "https://boyfriend-birthday.vercel.app/",
+    siteName: "Boyfriend's Birthday",
     images: [
       {
         url: "https://chronark.com/og.png",

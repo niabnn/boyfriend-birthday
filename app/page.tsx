@@ -34,13 +34,13 @@ export default function Home() {
           </Link>
         ))}
       </ul>
-      <div className="my-10 text-center animate-fade-in">
+      <div className=" flex flex-col items-center my-10 mx-6 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          This web site was created by Brett's sexy and Colombian girl, Nia.
+          This web site was created by <span className="text-glow-orange">Brett</span>'s sexy and smart Colombian girl, <span className="text-glow-orange">Nia</span>.
 
         </h2>
         <h2 className="text-sm text-zinc-500 ">
-        Postdata: I know distance is hard, but I hope this makes you feel a little closer
+        <span className="text-black">Postdata:</span> I know <span className="text-glow-orange">distance</span> is hard, but I hope this makes you feel a little <span className="text-glow-orange">closer  </span>
           to me.
         </h2>
       </div>

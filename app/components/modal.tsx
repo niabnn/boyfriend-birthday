@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, children }) => {
                     &times;
                 </button>
                 <div className="flex justify-center mb-4">
-                    <Image src="/logo.jpeg" alt="Logo" width={180} height={180} /> {/* Agregar la imagen */}
+                    <Image src="/logo.png" alt="Logo" width={180} height={180} /> {/* Agregar la imagen */}
                 </div>
                 {children}
                 <div className="mt-4 text-center">
