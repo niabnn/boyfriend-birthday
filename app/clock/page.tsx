@@ -48,10 +48,9 @@ export default function Example() {
 
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
 		<nav></nav>
-		<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r bg-glow-orange" />
 		<Particles
 		  className="absolute inset-0 -z-10 animate-fade-in"
-		  quantity={290}
+		  quantity={300}
 		/>
 		<div className="flex flex-col items-center text-center">
 				
@@ -62,7 +61,7 @@ export default function Example() {
 					I want to wish you the happiest birthday, <br />
 					you're my <span className="text-glow-orange">honeypot</span> ant. <br />
 					wish I could be there to <span className="text-glow-orange">celebrate with you</span>, <br />
-                    Instead, I coded this <span className="text-white bg-glow-orange">clock</span> that counts  <br />
+                    Instead, I coded this <span className="text-white bg-glow-orange rounded-lg p-1">clock</span> that counts  <br />
                     the days, hours, minutes, and seconds  <br />
                     that have passed since the day <br />
                     I saw you for the <span className="text-glow-orange">last</span> time. <br />
@@ -105,9 +104,6 @@ export default function Example() {
                     </div>
                 </Modal>
             </div>
-
-
-
 	  </div>
     );
 }
