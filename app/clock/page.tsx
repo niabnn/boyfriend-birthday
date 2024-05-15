@@ -49,12 +49,14 @@ export default function Example() {
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
 		<nav></nav>
 		<Particles
-		  className="absolute inset-0 -z-10 animate-fade-in"
+		  className="absolute inset-0 -z-10 "
 		  quantity={300}
 		/>
-		<div className="flex flex-col items-center text-center animate-fade-in">
-				
+		<div className="flex flex-col items-center text-center">
+		<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r bg-glow-orange" />
+
                 <h5 className="mb-8 text-lg font-cormorant">
+					
                     Dear <span className="text-glow-orange">Brett</span> Hanna, <br />
                     wish I could count the <span className="text-glow-orange">kisses</span> I've gave you, <br />
                     just to makesure, they are <span className="text-glow-orange">endless</span>. <br />
@@ -65,7 +67,8 @@ export default function Example() {
                     the days, hours, minutes, and seconds  <br />
                     that have passed since the day <br />
                     I saw you for the <span className="text-glow-orange">last</span> time. <br />
-                </h5>		
+                </h5>
+		
                 <div className="bg-white p-3 rounded-lg shadow-md inline-block mb-4">
                     <div className="bg-glow-orange text-white text-3xl font-mono py-2 px-4 rounded-lg flex items-center justify-center space-x-1">
                         <div className="flex items-baseline space-x-1">
@@ -98,6 +101,8 @@ export default function Example() {
                 <p className=" text-sm mt-4 text-center">
                     Babe click the button 'stop' and see what happens 
                 </p>
+				<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r bg-glow-orange" />
+
                 <Modal show={showMessage} onClose={handleCloseModal}>
                     <div className="text-lg text-center text-glow-orange">
                         ¡¡Sorry babe but this clock will only stop, once you kiss me again...!!
