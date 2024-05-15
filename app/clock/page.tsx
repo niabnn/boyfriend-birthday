@@ -52,7 +52,7 @@ export default function Example() {
 		  className="absolute inset-0 -z-10 animate-fade-in"
 		  quantity={300}
 		/>
-		<div className="flex flex-col items-center text-center">
+		<div className="flex flex-col items-center text-center animate-fade-in">
 				
                 <h5 className="mb-8 text-lg font-cormorant">
                     Dear <span className="text-glow-orange">Brett</span> Hanna, <br />
