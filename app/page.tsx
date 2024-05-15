@@ -37,6 +37,7 @@ export default function Home() {
       <div className="my-10 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
           This web site was created by Brett's sexy and Colombian girl, Nia.
+
         </h2>
         <h2 className="text-sm text-zinc-500 ">
         Postdata: I know distance is hard, but I hope this makes you feel a little closer

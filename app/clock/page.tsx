@@ -1,8 +1,15 @@
-"use client";
+"use client";	
 import { useState, useEffect } from "react";
 import { Navigation } from "../components/nav";
 import Modal from "../components/modal";
 import Particles from "../components/particles";  // Importar el componente de partículas
+import Link from "next/link";
+import React from "react";
+
+const navigation = [
+  { name: "Click here babe", href: "/clock" },
+];
+
 
 export default function Example() {
     const [elapsedTime, setElapsedTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -38,11 +45,15 @@ export default function Example() {
     };
 
     return (
-        <div className="bg-light-orange min-h-screen flex flex-col justify-center items-center relative">
-            <Navigation />
-			<Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={290} />
 
-            <div className="flex flex-col items-center text-center">
+		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
+		<nav></nav>
+		<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r bg-glow-orange" />
+		<Particles
+		  className="absolute inset-0 -z-10 animate-fade-in"
+		  quantity={290}
+		/>
+		<div className="flex flex-col items-center text-center">
 				
                 <h5 className="mb-8 text-lg font-cormorant">
                     Dear <span className="text-glow-orange">Brett</span> Hanna, <br />
@@ -94,6 +105,9 @@ export default function Example() {
                     </div>
                 </Modal>
             </div>
-        </div>
+
+
+
+	  </div>
     );
 }
