@@ -16,12 +16,7 @@ export const metadata: Metadata = {
       "Happy Birthday website for long distance love",
     url: "https://boyfriend-birthday.vercel.app/",
     siteName: "Boyfriend's Birthday",
-    images: [
-      {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
+    images: [{ url: "/logo.jpeg" }
     ],
     locale: "en-US",
     type: "website",
