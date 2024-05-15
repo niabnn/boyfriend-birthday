@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, children }) => {
     const whatsappMessage = "Hey babe, Let's schedule that kiss..."; // Mensaje predeterminado
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 flex-col ">
             <div className="bg-light-orange p-6 rounded-lg shadow-lg relative">
                 <button
                     className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"

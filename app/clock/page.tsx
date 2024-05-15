@@ -104,7 +104,7 @@ export default function Example() {
 				<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r bg-glow-orange" />
 
                 <Modal show={showMessage} onClose={handleCloseModal}>
-                    <div className="text-lg text-center text-glow-orange">
+                    <div className="text-lg text-center text-glow-orange ">
                         ¡¡Sorry babe but this clock will only stop, once you kiss me again...!!
                     </div>
                 </Modal>
